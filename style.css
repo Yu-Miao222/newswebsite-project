@@ -1,0 +1,534 @@
+
+*{
+    margin: 0;
+}
+
+
+/**********Responsive design for mobil**********/
+@media screen and (max-width: 667px) {
+    
+    .header{
+        width: 100%;
+        height: 70px;
+        background-color: lightblue;
+    }
+    .logo-box{
+        float: left;
+        height: 75px;
+        width: 50%;
+    }
+    .button-box{
+        float: right;
+        height: 75px;
+        width: 50%;
+        line-height: 75px;
+    }
+    .logo-box h1{
+        font-size: 40px;
+        color: orangered;
+        text-shadow: 7px 7px 10px darkgrey;
+        display: inline;
+        padding-left: 5px;
+    }
+    
+    .button-box .b1 {
+        width: 150px;
+        height: 30px;
+        background-color: rgb(246, 185, 94);
+        border: 2px groove rgb(246, 185, 94);
+        border-radius: 8px;
+        vertical-align: bottom;
+        margin-bottom: 5px;
+        display: none;
+    }
+    .button-box .b2 {
+        width: 150px;
+        height: 30px;
+        background-color:  rgb(246, 185, 94);
+        border: 2px groove rgb(246, 185, 94);
+        border-radius: 8px;
+        vertical-align: bottom;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        display: none;
+    }
+    
+    .nav{
+        width: 100%;
+        height: 155px;
+        line-height: 50px;
+        background-color:dimgray;
+        font-size: 18px;
+    }
+    .nav ul{
+        width: 50%;
+        margin-left: 30px;
+    }
+    .nav ul li{
+        float: left;
+        list-style-type: none;
+        padding: 0px 30px;
+    }
+    .nav a:hover{
+        color: #ff4500;
+    }
+    .nav ul a{
+        text-decoration: none;
+        color: #b0b0b0;
+        margin: 5px;
+    }
+    
+    .content{
+        width: 100%;
+        background-color: white;
+        display: flex;
+        
+    }
+    .flexbox-1, .flexbox-3, .flexbox-4{
+        display: none;
+    } 
+    .flexbox-2{
+        height: 400px;
+        width: 100%;
+        padding: 10px;
+        
+    }
+    .flexbox-2 a{
+        color: black;
+        text-decoration: none;
+        }
+    
+    .flexbox-2 .img{
+        width: 100%;
+        height: 300px;
+    }
+    .footer{
+        width: 100%;
+        height: 200px;
+        background-color: lightgray;
+        display: flex;
+        position: relative;
+   
+    }
+
+    .footer .footer-left{
+        width: 100%;
+        height: 100px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        position: relative;
+        left: 50px;
+    
+    }
+    .footer .footer-middle, .footer-right{
+        display: none;
+    }
+    .footer ul{
+        list-style-type: none;
+    }
+    .footer a{
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+        display: block;
+        height: 50px;
+    }
+    .footer a:hover{
+        color: orangered;
+    
+    }
+   
+}
+
+
+/**********Responsive design for tablet**********/
+@media screen and (max-width: 1024px) and (min-width: 668px)  {
+
+    .header{
+        width: 100%;
+        height: 75px;
+        background-color: rgb(231, 189, 189);
+        display: flex;
+    }
+    .logo-box{
+        float: left;
+        height: 75px;
+        width: 70%;
+    }
+    .button-box{
+        float: right;
+        margin-left: 50px;
+        margin-top: 10px;
+        height: 75px;
+        width: 70%;
+        line-height: 75px;
+        
+    }
+    .logo-box h1{
+        font-size: 40px;
+        color: orangered;
+        text-shadow: 7px 7px 10px darkgrey;
+        display: inline;
+        padding-left: 8px;
+    }
+
+    .button-box .b1 {
+        width: 100px;
+        height: 25px;
+        background-color: rgb(246, 185, 94);
+        border: 2px groove rgb(246, 185, 94);
+        border-radius: 8px;
+        display: block;
+        margin-bottom: 5px;
+    }
+    .button-box .b2 {
+        width: 100px;
+        height: 25px;
+        background-color:  rgb(246, 185, 94);
+        border: 2px groove rgb(246, 185, 94);
+        border-radius: 8px;
+        display: block;
+    }
+    .header a {
+        color: green;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .nav{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        background-color:dimgray;
+        font-size: 20px;
+    }
+    .nav ul{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .nav ul li{
+        float: left;
+        list-style-type: none;
+        padding: 0px 10px;
+    }
+    .nav a:hover{
+        color: #ff4500;
+    }
+    .nav ul a{
+        text-decoration: none;
+        color: #b0b0b0;
+        margin: 5px;
+    }
+    .content{
+        width: 100%;
+        background-color: white;
+        display: flex;
+        
+    }
+    
+   .flexbox-1{
+        display: none;
+   } 
+   .flexbox-2{
+        height: 600px;
+        width: 50%;
+        padding: 10px;
+   } 
+   .flexbox-3{
+        height: 600px;
+        width: 50%;
+        padding: 10px;  
+   } 
+   .flexbox-2 a, .flexbox-3 a{
+    color: black;
+    text-decoration: none;
+    }
+
+    .flexbox-2 .img, .flexbox-3 img{
+    width: 100%;
+    height: 300px;
+    }
+    .flexbox-4{
+        display: none;           
+                        
+    }
+    .footer{
+        width: 100%;
+        height: 200px;
+        background-color: lightgray;
+        display: flex;
+        position: relative;
+   
+    }
+
+    .footer .footer-left{
+        width: 200px;
+        height: 150px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        position: relative;
+        left: 50px;
+    }
+    .footer .footer-middle{
+        width: 150px;
+        height: 150px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        position: relative;
+        left:200px;
+    }
+    .footer .footer-right{
+        width: 150px;
+        height: 150px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        position: absolute;
+        right: 250px;
+        display: none;
+    }
+    
+    .footer ul{
+        list-style-type: none;
+    }
+    .footer a{
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+        display: block;
+        height: 50px;
+    }
+    .footer a:hover{
+        color: orangered;
+    
+    }
+
+    
+}
+
+/**********Responsive design for desktop**********/
+@media screen and ( min-width: 1024px) {
+    .header{
+        width: 100%;
+        height: 100px;
+        background-color: white;
+        display: flex;
+    }
+    .logo-box{
+        float: left;
+        height: 100px;
+        width: 80%;
+    }
+    .button-box{
+        float: right;  
+        margin-left: 150px;
+        height: 100px;
+        width: 80%;
+        line-height: 100px;
+    }
+   
+    .logo-box h1{
+        font-size: 80px;
+        color: orangered;
+        text-shadow: 7px 7px 10px darkgrey;
+        display: inline;
+        padding-left: 5px;
+    }
+
+    .button-box .b1 {
+        width: 150px;
+        height: 30px;
+        background-color: rgb(246, 185, 94);
+        border: 2px groove rgb(246, 185, 94);
+        border-radius: 8px;
+        vertical-align: bottom;
+        margin-bottom: 5px;
+    }
+    .button-box .b2 {
+        width: 150px;
+        height: 30px;
+        background-color:  rgb(246, 185, 94);
+        border: 2px groove rgb(246, 185, 94);
+        border-radius: 8px;
+        vertical-align: bottom;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+    .header a {
+        color: green;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    
+    .nav{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        background-color:dimgray;
+        font-size: 23px;
+    }
+    .nav ul{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .nav ul li{
+        float: left;
+        list-style-type: none;
+        padding: 0px 15px;
+    }
+    .nav a:hover{
+        color: #ff4500;
+    }
+    .nav ul a{
+        text-decoration: none;
+        color: #b0b0b0;
+        margin: 30px;
+    }
+    .content{
+        width: 100%;
+        background-color: white;
+        display: flex;
+        
+    }
+    .flexbox-1, .flexbox-2, .flexbox-3{
+        height: auto;
+        width: 25%;
+        padding: 10px;
+    } 
+    .flexbox-1 ul{
+        padding: 20px;
+    }
+    .flexbox-1 li{
+        list-style-type: none;
+        padding: 20px;
+    }
+    .flexbox-1 a{
+        color: black;
+        text-decoration: none;
+        display: flex;
+    }
+    .flexbox-1 a:hover{
+        color:orange;
+    }
+    .flexbox-1 span{
+        display: block;
+        width: 25px;  /* width doesn't work???????*/
+        height: 25px;
+        background-color: orangered;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        border-radius: 100%;
+        flex: 1;
+        animation: anima 2s linear infinite alternate;
+    } 
+    @keyframes anima {
+        0% {
+            opacity: 1;
+            box-shadow: 0 1px 2px rgb(255, 69, 0)
+        }
+          50% {
+            opacity: 1;
+            box-shadow: 0 1px 2px rgb(255, 69, 0)
+        }
+          100% {
+            opacity: 1;
+            box-shadow: 0 1px 30px rgb(255, 69, 0)
+        }
+    }
+    .flexbox-1 h3{
+        padding-left: 20px;
+        float: right;
+        flex: 4;
+    }
+    
+    
+    .flexbox-2 a, .flexbox-3 a{
+        color: black;
+        text-decoration: none;
+    }
+    
+    .flexbox-2 .img, .flexbox-3 img{
+        width: 100%;
+        height: 300px;
+    }
+      
+
+    .flexbox-4{
+        height: auto;
+        width: 25%;
+        display: grid;
+        grid-template-columns:33.3%  33.3% 33.3% ;
+        grid-template-rows: 25% 25% 25% 25% ;
+        grid-template-areas: 
+                        "grid-left grid-top grid-top" 
+                        "grid-left grid-top grid-top" 
+                        "grid-left grid-bottom grid-bottom" 
+                        "grid-left grid-bottom grid-bottom" ;
+                        
+    }
+    .grid-left {
+        grid-area: grid-left;
+        overflow: hidden;
+    }
+    
+    .grid-top {
+        grid-area: grid-top;
+    }
+    
+    .food-img, .jobs-img{
+        width: 245px;
+        height: 250px;
+        padding: 3px;
+    }
+    .grid-bottom{
+        grid-area: grid-bottom;
+    }
+    .footer{
+        width: 100%;
+        height: 200px;
+        background-color: lightgray;
+        display: flex;
+        position: relative;
+   
+    }
+   
+    .footer .footer-left{
+        width: 200px;
+        height: 150px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        position: relative;
+        left: 150px;
+    }
+    .footer .footer-middle{
+        width: 200px;
+        height: 150px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        position: relative;
+        left:270px;
+    }
+    .footer .footer-right{
+        width: 200px;
+        height: 150px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        position: relative;
+        left: 400px;
+    
+    }
+    .footer ul{
+        list-style-type: none;
+    }
+    .footer a{
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        display: block;
+        height: 50px;
+    }
+    .footer a:hover{
+        color: orangered;
+    
+    }
+
+}
